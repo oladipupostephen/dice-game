@@ -38,9 +38,9 @@ console.log('plaer'+activeplayer+'is'+ scores[activeplayer]);
 //change the interface to the next player
 document.querySelector('#score-'+activeplayer).textContent= scores[activeplayer];
 //determine the winner
-if(scores[activeplayer]>=20){
+if(scores[activeplayer]>=50){
     document.querySelector('#name-'+activeplayer).textContent='winner';
-    document.querySelector('.dice').style.display = 'none';
+   document.querySelector('.dice').style.display = 'none';
    document.querySelector('.player-' + activeplayer + '-panel').classList.add('winner');
    document.querySelector('.player-' + activeplayer + '-panel').classList.remove('active');
    //put an end to the game
